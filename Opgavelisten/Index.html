@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <ul class="list-unstyled clearfix" id="task">
+       
+    </ul>
+
+    <div class="panel panel-default panel-body panel-wrapper col-sm-6">
+        <form class="form-horizontal" id="createTask">
+            <div>
+                <label for="Name">Navn på opgave</label>
+                <input class="form-control" name="Name" />
+            </div>
+            <div>
+                <label for="CategoryId">Opgaves kategori</label>
+                <input class="form-control" name="CategoryId" />
+            </div>
+            <div>
+                <label for="DateCreated">Dato på oprettelse</label>
+                <input class="form-control" name="DateCreated" />
+            </div>
+            <div>
+                <label for="FinishedAssignment">Færdiggjort opgave</label>
+                <input class="form-control" name="FinishedAssignment" />
+            </div>
+            <button class="btn btn-success confirm-btn" type="button" id="btnCreate">Opret nyt</button>
+        </form>
+    </div>
+
+    <div class="panel panel-default panel-body panel-wrapper col-sm-6">
+        <form class="form-horizontal" id="editTask">
+            <div>
+                <label for="Id">Rediger ProduktID</label>
+                <input class="form-control" name="Id" id="editId" />
+            </div>
+            <div>
+                <label for="Name">Rediger Opgavenavn</label>
+                <input class="form-control" name="Name" id="editName" />
+            </div>
+            <div>
+                <label for="DateCreated">Rediger Oprettelsestidspunkt</label>
+                <input class="form-control" name="DateCreated" id="editDate" />
+            </div>
+            <div>
+                <label for="CategoryId">Rediger Categori ID</label>
+                <input class="form-control" name="CategoryId" id="editCategoryId" />
+            </div>
+            <div>
+                <label for="FinishedAssignment">Rediger Opgavestatus</label>
+                <input class="form-control" name="FinishedAssignment" id="editAssignmentState" />
+            </div>
+            <button class="btn btn-success confirm-btn" type="button" id="btnEdit">Gem ændringer</button>
+        </form>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+    <script src="Scripts/Api.js"></script>
+</body>
+</html>

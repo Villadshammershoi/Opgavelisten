@@ -1,0 +1,11 @@
+﻿body {
+}
+.btn-style {
+    float: left;
+    margin: 8px;
+}
+
+.list-item {
+    line-height: 60px;
+    font-size: 18px;
+}
